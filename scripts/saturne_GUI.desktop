@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=code_saturne
+Comment=CodeSaturne GUI
+Exec=/usr/local/scripts/start-gui.sh
+Path=/data/code_saturne_$saturne_ver/run
+Icon=/etc/NAE/code_saturne-logo-135x135.png
+Terminal=false
+Type=Application
+StartupNotify=true
