@@ -34,6 +34,7 @@ echo "saturne_ver=7.0.5" >>/etc/environment
 su - $app_user -c "/LOCAL/code_saturne/install_saturne_by_app_user.sh"
 chown -R root:root  /LOCAL
 chmod -R o+rx /LOCAL
+chmod a+x /usr/local/scripts/*.sh
 ls /LOCAL/code_saturne/7.0.5
 
 exit 0
