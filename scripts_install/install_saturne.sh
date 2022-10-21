@@ -18,6 +18,7 @@ apt-get -y install zlib1g-dev libudev-dev
 #apt-get -y install python3-pyqt5 pyqt5-dev pyqt5-dev-tools qtbase5-dev qtcreator qt5-qmake
 apt-get -y install pip
 pip install pyqt5
+apt-get -y install python3-pyqt5
 apt-get clean && rm -rf /var/lib/apt/*
 
 saturne_ver=7.0.5 
