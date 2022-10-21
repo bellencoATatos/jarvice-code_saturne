@@ -28,11 +28,10 @@ RUN if [ $(( $(date "+%s") -  $(date -r /var/cache/apt "+%s"))) -gt 28800 ]; the
 		
 COPY scripts_install /root/scripts_install
 COPY TAR/*.tar.gz /LOCAL/code_saturne/TAR/ 
+
 WORKDIR /root/scripts_install
-RUN bash /root/scripts_install/install_saturne.sh
-
 COPY scripts /usr/local/scripts
-
+RUN bash /root/scripts_install/install_saturne.sh
 COPY NAE/AppDef.json /etc/NAE/AppDef.json
 COPY NAE/screenshot.png /etc/NAE/screenshot.png
 COPY NAE/code_saturne-logo-135x135.png /etc/NAE/code_saturne-logo-135x135.png
