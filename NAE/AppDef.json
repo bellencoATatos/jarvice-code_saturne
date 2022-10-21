@@ -23,6 +23,13 @@
             ],
             "parameters": {}
         },
+        "Server": {
+            "path": "/sbin/init",
+            "interactive": true,
+            "name": "Server",
+            "description": "Launch a session with all boot services, including SSH (if installed).  Connection address and credentials will appear in your web browser once available.",
+            "parameters": {}
+        },
         "Batch": {
             "path": "/usr/local/scripts/openfoam-batch.sh",
             "interactive": true,
